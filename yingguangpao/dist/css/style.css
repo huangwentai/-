@@ -1,0 +1,215 @@
+*{margin:0;padding:0;}
+html,body{height:100%;}
+body{font-family:"microsoft yahei";}
+.swiper-container {width: 100%;height: 100%;  }  
+.swiper-slide{width:100%;height:100%;overflow: hidden;}
+img{display:block;width: 100%;}
+
+@-webkit-keyframes start {
+	0%{-webkit-transform: scale(1,1);}
+	50% {-webkit-transform: scale(1.2,1.2);}
+	100% {-webkit-transform: scale(1,1);}
+}
+@-webkit-keyframes logo {
+	0%{-webkit-transform: scale(0,0);}
+	100% {-webkit-transform: scale(1,1);}
+}
+.ani{position:absolute;width: 100%;}
+.up,.logo{z-index: 1000;position:absolute;top: 0;}
+.logoanimate{-webkit-transform: scale(0,0);-webkit-animation: logo 0.5s ease 0.8s both;-webkit-transform-origin:13.281% 7.522%;}
+#upanimate{-webkit-animation: start 2s infinite ease-in-out;-webkit-transform-origin:50% 69%;}
+
+
+/*第一页*/
+.swiper-slide1{background: #000000;} 
+@-webkit-keyframes p1girl {
+	0%{-webkit-transform:translate(-15px,0px);}
+	100%{-webkit-transform: translate(0px,-15px);}
+}
+@-webkit-keyframes p1girldiv {
+	0%{-webkit-transform:translateX(-100%);}
+	100%{-webkit-transform: translateX(0%);}
+}
+@-webkit-keyframes p1run {
+	0%{-webkit-transform:translate(-100%,20%);}
+	50%{-webkit-transform: translate(0%,0%);-webkit-transform: scale(1,1);}
+	75%{-webkit-transform: scale(0.95,0.95);}
+	100%{-webkit-transform: scale(1,1);}
+}
+@-webkit-keyframes p1shinediv {
+	0%{-webkit-transform:translateX(100%);}
+	100%{-webkit-transform:translateX(0%);}
+}
+@-webkit-keyframes p1shine {
+	0%{opacity: 0.4;}
+	100%{opacity: 1;}
+}
+@-webkit-keyframes p1x {
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+@-webkit-keyframes p1guysdiv {
+	0%{-webkit-transform:translateY(150%)}
+	100%{-webkit-transform:translateY(0%);}
+}
+@-webkit-keyframes p1guys {
+	0%{-webkit-transform:translateY(0px);}
+	100%{-webkit-transform:translateY(15px);}
+}
+.p1girl{-webkit-transform:translate(-15px,0px);-webkit-animation: p1girl 1s linear 1s alternate infinite;}
+.p1girldiv{-webkit-transform:translateX(-100%);-webkit-animation: p1girldiv 0.5s 0.5s both;}
+.p1run{-webkit-animation: p1run ease-out 0.5s;}
+.p1shinediv{-webkit-transform:translateX(100%);-webkit-animation: p1shinediv 0.4s both;}
+.p1shine{-webkit-animation: p1shine linear 1s infinite alternate;}
+.p1x{opacity: 0;-webkit-animation: p1x 1.2s 0.8s both;}
+.p1guysdiv{-webkit-transform:translateY(150%);-webkit-animation: p1guysdiv 0.5s 0.8s both;}
+.p1guys{-webkit-animation: p1guys linear 1s 0.5s infinite alternate;}
+
+/*第二页*/
+.swiper-slide2{background: #d22a5c;}
+@-webkit-keyframes p2title1 {
+	0%{-webkit-transform:translate(-100%,20%);}
+	20%{-webkit-transform:translate(0%,0%);}
+	80%{-webkit-transform:translate(0%,0%);opacity: 1;}
+	100%{-webkit-transform:translate(100%,-20%);opacity: 0;}		
+}
+.p2title1{-webkit-transform:translateX(-100%);-webkit-animation: p2title1 ease-in-out 3s both;}
+.p2title2{-webkit-transform:translateX(-100%);-webkit-animation: p1run ease-in-out 1s 3s both;}
+.p2girl{-webkit-transform:translate(-15px,0px);-webkit-animation: p1girl 1s linear 1.5s alternate infinite;}
+.p2girldiv{-webkit-transform:translateX(-100%);-webkit-animation: p1girldiv 0.5s 1s both;}
+.p2guys{-webkit-animation: p1guys linear 1s 3.5s infinite alternate;}
+.p2guysdiv{-webkit-transform:translateX(-100%);-webkit-animation: p1girldiv 0.5s 3s both;}
+
+/*第三页*/
+.swiper-slide3{background: #008bda;}
+@-webkit-keyframes p3shinediv {
+	0%{-webkit-transform:translate(-100%,50%);}
+	100%{-webkit-transform: translate(0%,0%);}
+}
+@-webkit-keyframes p3house {
+	0%{-webkit-transform:translateY(100%);opacity: 0;}
+	100%{-webkit-transform:translateY(0%);opacity: 1;}
+}
+@-webkit-keyframes p3window {
+	0%{-webkit-transform:translateX(100%);opacity: 0;}
+	100%{-webkit-transform:translateX(0%);opacity: 1;}
+}
+@-webkit-keyframes p3boydiv {
+	0%{-webkit-transform: scale(0,0);opacity: 0;}
+	100%{-webkit-transform: scale(1,1);opacity: 1;}
+}
+@-webkit-keyframes p3boy {
+	0%{-webkit-transform:translateY(0px);}
+	100%{-webkit-transform:translateY(15px);}
+}
+@-webkit-keyframes p3title2 {
+	0%{-webkit-transform:translate(-100%,-20%);opacity: 0;}
+	100%{-webkit-transform:translate(0%,0%);opacity: 1;}
+}
+.p3shinediv{-webkit-transform:translate(-100%,50%);-webkit-animation: p3shinediv 0.4s both;}
+.p3house{-webkit-transform:translateY(100%);-webkit-animation: p3house 0.4s 0.4s both;}
+.p3title1{-webkit-transform:translateX(-100%);-webkit-animation: p2title1 ease-in-out 2s 0.4s both;}
+.p3window{-webkit-transform:translateX(100%);opacity: 0;-webkit-animation: p3window 0.4s 2.3s both;}
+.p3boydiv{-webkit-transform: scale(0,0);-webkit-animation: p3boydiv 0.4s 2.7s both;-webkit-transform-origin:58.23% 70.31%;}
+.p3boy{-webkit-animation: p3boy 1s 3.1s linear alternate infinite;}
+.p3paperdiv{-webkit-transform: scale(0,0);-webkit-animation: p3boydiv 0.6s 3s both;-webkit-transform-origin:50% 70.31%;}
+.p3paper{-webkit-animation: p3boy 1s 4.1s linear alternate infinite;}
+.p3title2{-webkit-transform:translateX(-100%);-webkit-animation: p3title2 0.5s 3.2s both;}
+
+/*第四页*/
+.swiper-slide4{background: #ffae00;}
+@-webkit-keyframes p4shinediv {
+	0%{-webkit-transform:translateX(-100%);opacity: 0;}
+	100%{-webkit-transform:translateX(0%);opacity: 1;}
+}
+@-webkit-keyframes p4title1 {
+	0%{-webkit-transform:translate(-100%,5%);}
+	20%{-webkit-transform:translate(0%,0%);}
+	80%{-webkit-transform:translate(0%,0%);opacity: 1;}
+	100%{-webkit-transform:translate(100%,-5%);opacity: 0;}		
+}
+@-webkit-keyframes p4muscle {
+	0%{-webkit-transform: scale(1,1);}
+	100% {-webkit-transform: scale(1.1,1.1);}
+}
+@-webkit-keyframes p4title2 {
+	0%{-webkit-transform:translate(100%,-7%);opacity: 0;}
+	100%{-webkit-transform:translate(0%,0%);opacity: 1;}
+}
+@-webkit-keyframes p4musclediv {
+	0%{-webkit-transform: scale(0,0);}
+	100% {-webkit-transform: scale(1,1);}
+}
+.p4shinediv{-webkit-transform:translateX(-100%);-webkit-animation: p4shinediv 0.4s both;}
+.p4boydiv{-webkit-transform:translateX(100%);-webkit-animation: p3window 0.4s 0.4s both;}
+.p4boy{-webkit-animation: p1guys linear 1s 0.4s infinite alternate;}
+.p4title1{-webkit-transform:translateX(-100%);-webkit-animation: p4title1 ease-in-out 2s 0.4s both;}
+.p4wc{-webkit-transform: scale(0,0);-webkit-animation: p4musclediv ease-in-out 0.4s 2.2s both;-webkit-transform-origin:0% 40%;}
+.p4musclediv{-webkit-transform: scale(0,0);-webkit-animation: p4musclediv ease-in-out 0.4s 2.4s both;-webkit-transform-origin:0% 40%;}
+.p4muscle{-webkit-animation: p4muscle ease-in-out 1s 3s infinite alternate;-webkit-transform-origin:18.75% 40.7%;}
+.p4title2{-webkit-transform:translate(100%,-7%);-webkit-animation: p4title2 0.4s 2.6s both;}
+
+/*第五页*/
+.swiper-slide5{background: #753986;}
+@-webkit-keyframes p5title2 {
+	0%{-webkit-transform:translate(-100%,15%);opacity: 0;}
+	100%{-webkit-transform:translate(0%,0%);opacity: 1;}
+}
+.p5door{opacity: 0;-webkit-transform:translateY(100%);-webkit-animation: p3house 0.3s ease-out both;}
+.p5girldiv{opacity: 0;-webkit-transform:translateY(100%);-webkit-animation: p3house 0.3s 0.3s ease-out both;}
+.p5title2{-webkit-transform:translate(-100%,15%);opacity: 0;-webkit-animation: p5title2 0.4s 2.6s both;}
+
+/*第六页*/
+@-webkit-keyframes p4shinediv {
+	0%{-webkit-transform:translateX(-100%);opacity: 0;}
+	100%{-webkit-transform:translateX(0%);opacity: 1;}
+}
+@-webkit-keyframes p4shinediv {
+	0%{-webkit-transform:translateX(-78%);opacity: 0;}
+	100%{-webkit-transform:translateX(0%);opacity: 1;}
+}
+@-webkit-keyframes p4shinediv {
+	0%{-webkit-transform:translateX(-50%);opacity: 0;}
+	100%{-webkit-transform:translateX(0%);opacity: 1;}
+}
+@-webkit-keyframes p6button {
+	0%{-webkit-transform:scale(0,0);}
+	70%{-webkit-transform:scale(1,1);}
+	85%{-webkit-transform:scale(0.9,0.9);}
+	100%{-webkit-transform:scale(1,1);}
+}
+@-webkit-keyframes p6equip {
+	0%{-webkit-transform:translateY(100%);opacity: 0;}
+	100%{-webkit-transform:translateY(0%);opacity: 1;}
+}
+.p6title1{-webkit-transform:translateX(-100%);opacity: 0;-webkit-animation: p4shinediv 0.4s both;}
+.p6title2{-webkit-transform:translateX(-100%);opacity: 0;-webkit-animation: p4shinediv 0.4s 0.4s both;}
+.p6beijing{-webkit-transform:translateX(-100%);opacity: 0;-webkit-animation: p4shinediv 0.4s 0.8s both;}
+.p6xian{-webkit-transform:translateX(-55%);opacity: 0;-webkit-animation: p4shinediv 0.4s 1.2s both;}
+.p6shanghai{-webkit-transform:translateX(-30%);opacity: 0;-webkit-animation: p4shinediv 0.4s 1.6s both;}
+.p6button{-webkit-transform:scale(0,0);-webkit-animation: p6button 0.6s ease-in 2s both;-webkit-transform-origin:50% 68.14%;}
+.p6equip{-webkit-transform:translateY(100%);opacity: 0;-webkit-animation: p6equip 0.4s ease-out 2.6s both;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
